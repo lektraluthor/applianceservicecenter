@@ -19,3 +19,9 @@
     margin: 24px auto;
   }
 }
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 100px 0;
+  }
+}

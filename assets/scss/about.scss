@@ -1,6 +1,6 @@
 .about {
   display: flex;
-  padding: 100px 0 80px;
+  padding: 100px 0 120px;
   background-color: #fff;
   text-align: center;
   align-items: center;
@@ -8,7 +8,6 @@
   &-item {
     text-align: start;
     align-items: center;
-    margin: 40px 0;
   }
 
   img {
@@ -16,7 +15,7 @@
   }
 
   h2 {
-    padding-bottom: 24px;
+    padding-bottom: 54px;
   }
 
   h4 {
@@ -26,5 +25,17 @@
 
   p {
     font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 70px 0 90px;
+    p {
+      margin-top: 20px;
+    }
+    h2 {
+      padding-bottom: 24px;
+    }
   }
 }
