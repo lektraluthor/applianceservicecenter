@@ -1,0 +1,15 @@
+.brands {
+  padding: 100px 0 120px;
+  text-align: center;
+
+  .title {
+    margin-bottom: 54px;
+  }
+
+  &-item {
+    margin-bottom: 24px;
+    img {
+      width: 100%;
+    }
+  }
+}

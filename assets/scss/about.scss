@@ -1,0 +1,30 @@
+.about {
+  display: flex;
+  padding: 100px 0 80px;
+  background-color: #fff;
+  text-align: center;
+  align-items: center;
+
+  &-item {
+    text-align: start;
+    align-items: center;
+    margin: 40px 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h2 {
+    padding-bottom: 24px;
+  }
+
+  h4 {
+    color: $dark-blue;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+}

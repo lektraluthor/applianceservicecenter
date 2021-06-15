@@ -1,0 +1,22 @@
+footer {
+  padding: 50px 0 30px;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: $black;
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    color: #929292;
+    font-size: 0.75rem;
+    a {
+      color: #929292;
+      margin-left: 16px;
+      text-decoration: none;
+      transition: all .1s linear;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}

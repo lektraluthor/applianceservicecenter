@@ -1,0 +1,25 @@
+.offers {
+  color: #fff;
+  padding: 80px 0;
+  background-color: $black;
+
+  .title {
+    text-align: center;
+    margin-bottom: 54px;
+    color: #ffffff;
+  }
+
+  &-item {
+    text-align: center;
+    padding: 56px 0 40px;
+    border-radius: 4px;
+    border: 1px solid $green;
+    background-color: rgba(255, 255, 255, 0.08);
+    h6 {
+      margin: 12px 0;
+    }
+    h2, h3 {
+      font-weight: 600;
+    }
+  }
+}
