@@ -209,7 +209,11 @@ header .navbar-nav .nav-item .nav-link:hover {
   padding: 56px 0 40px;
   border-radius: 4px;
   border: 1px solid #009688;
+  transition: all 0.2s linear;
   background-color: rgba(255, 255, 255, 0.08);
+}
+.offers-item:hover {
+  border: 1px solid #007bff;
 }
 .offers-item h6 {
   margin: 12px 0;
@@ -281,7 +285,11 @@ header .navbar-nav .nav-item .nav-link:hover {
   text-align: center;
   border-radius: 4px;
   border: 1px solid #009688;
+  transition: all 0.2s linear;
   background-color: rgba(255, 255, 255, 0.08);
+}
+.services-item:hover {
+  border: 1px solid #007bff;
 }
 .services-item img {
   width: 100%;
@@ -299,7 +307,7 @@ header .navbar-nav .nav-item .nav-link:hover {
   }
 }
 .brands {
-  padding: 100px 0 120px;
+  padding: 100px 0;
   text-align: center;
 }
 .brands .title {
@@ -404,6 +412,10 @@ header .navbar-nav .nav-item .nav-link:hover {
   border-radius: 4px;
   border: 1px solid #cccccc;
   background-color: #fff;
+  transition: all 0.2s linear;
+}
+.testimonials-item:hover {
+  border: 1px solid #007bff;
 }
 .testimonials-item .headline {
   display: flex;
