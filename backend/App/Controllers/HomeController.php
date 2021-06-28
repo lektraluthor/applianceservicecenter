@@ -36,7 +36,7 @@ class HomeController extends BaseController {
       }
     }
 
-    $adminEmail = 'for.spam.kolia@mail.ru';
+    $adminEmail = 'info@appliancerepairservice';
     $data = [
       'name' => $name,
       'email' => $email,

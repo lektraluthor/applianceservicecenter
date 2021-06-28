@@ -58,6 +58,12 @@
       }
     }
 
+    .error {
+      color: red;
+      font-size: 	0.75rem;
+      display: flex;
+    }
+
     &-btn {
       padding: 16px 40px;
       margin-top: 16px;
