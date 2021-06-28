@@ -20,6 +20,42 @@
   }
 }
 
+.badges {
+  margin-top: 120px;
+
+  img {
+    height: 150px;
+    margin: 0 20px;
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+  }
+
+  .bounce {
+      animation-name: bounce;
+      animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+  }
+
+  .delay-1 {
+    animation-delay: .5s;
+  }
+
+  .delay-2 {
+    animation-delay: 1s;
+  }
+
+  @keyframes bounce {
+      0%   { transform: scale(1,1)      translateY(0); }
+      10%  { transform: scale(1.1,.95)   translateY(0); }
+      30%  { transform: scale(.95,1.1)   translateY(-70px); }
+      50%  { transform: scale(1,.95) translateY(0); }
+      57%  { transform: scale(1,1)      translateY(-5px); }
+      64%  { transform: scale(1,1)      translateY(0); }
+      100% { transform: scale(1,1)      translateY(0); }
+  }
+}
+
 @media (max-width: 767px) {
   .hero {
     padding: 100px 0;
