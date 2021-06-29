@@ -18,25 +18,26 @@
   }
 
   .counter-item {
-    &:hover i {
+    &:hover svg {
       color: $green;
     }
 
-    i {
-      font-size: 1.5rem;
+    svg {
+      height: 29px;
+      width: 24px;
       transition: all .1s linear;
     }
 
     .years {
-      animation: years 1s linear;
+      animation: years 2s linear;
     }
 
     .repairs {
-      animation: repairs 1s linear;
+      animation: repairs 2s linear;
     }
 
     .workers {
-      animation: workers 1s linear;
+      animation: workers 2s linear;
     }
   }
 

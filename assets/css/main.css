@@ -47,15 +47,46 @@ p {
   font-weight: 700;
 }
 
-.nav-toogle {
-  font-size: 25px;
-}
-
 @media (max-width: 767px) {
   .main-btn {
     display: flex;
     justify-content: center;
   }
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
 }
 header {
   background-color: white;
@@ -77,9 +108,9 @@ header .pre-header span {
   align-items: center;
   margin-left: 25px;
 }
-header .pre-header i {
+header .pre-header svg {
   color: #009688;
-  font-size: 0.75rem;
+  height: 12px;
   margin: 0 6px;
 }
 header .pre-header a {
@@ -190,6 +221,7 @@ header .navbar-nav .nav-item .nav-link:hover {
 }
 .badges img {
   height: 150px;
+  width: auto;
   margin: 0 20px;
   align-self: flex-end;
   animation-duration: 2s;
@@ -368,21 +400,22 @@ header .navbar-nav .nav-item .nav-link:hover {
   font-size: 0.879rem;
   margin-bottom: 54px;
 }
-.counter .counter-item:hover i {
+.counter .counter-item:hover svg {
   color: #009688;
 }
-.counter .counter-item i {
-  font-size: 1.5rem;
+.counter .counter-item svg {
+  height: 29px;
+  width: 24px;
   transition: all 0.1s linear;
 }
 .counter .counter-item .years {
-  animation: years 1s linear;
+  animation: years 2s linear;
 }
 .counter .counter-item .repairs {
-  animation: repairs 1s linear;
+  animation: repairs 2s linear;
 }
 .counter .counter-item .workers {
-  animation: workers 1s linear;
+  animation: workers 2s linear;
 }
 .counter #years, .counter #repairs, .counter #workers {
   animation-iteration-count: 1;
@@ -488,15 +521,6 @@ header .navbar-nav .nav-item .nav-link:hover {
 }
 .appointment .order-form .form-check {
   margin: 0px 8px 5px 5px;
-}
-.appointment .order-form .agreement {
-  text-align: left;
-  font-size: 0.875rem;
-  align-items: flex-start;
-}
-.appointment .order-form .agreement input {
-  margin-top: 5px;
-  margin-right: 8px;
 }
 .appointment .order-form .error {
   color: red;
