@@ -266,6 +266,14 @@ header .navbar-nav .nav-item .nav-link:hover {
   .hero {
     padding: 100px 0;
   }
+
+  .badges {
+    margin-top: 100px;
+  }
+  .badges img {
+    height: 100px;
+    margin: 0;
+  }
 }
 .offers {
   color: #fff;
