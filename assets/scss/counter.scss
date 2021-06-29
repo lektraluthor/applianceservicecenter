@@ -1,0 +1,87 @@
+.counter {
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+  background: rgba(54, 54, 54, .8) url("/assets/images/hero.webp") no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+
+  .title {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 0.879rem;
+    margin-bottom: 54px;
+  }
+
+  .counter-item {
+    &:hover i {
+      color: $green;
+    }
+
+    i {
+      font-size: 1.5rem;
+      transition: all .1s linear;
+    }
+
+    .years {
+      animation: years 1s linear;
+    }
+
+    .repairs {
+      animation: repairs 1s linear;
+    }
+
+    .workers {
+      animation: workers 1s linear;
+    }
+  }
+
+  #years, #repairs, #workers {
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    counter-reset: num var(--num);
+    font-weight: 800;
+    font-size: 2.5rem;
+    padding: 16px;
+    &::after {
+      content: counter(num) "+";
+    }
+  }
+  
+  @keyframes years {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 25;
+    }
+  }
+
+  @keyframes repairs {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 45000;
+    }
+  }
+
+  @keyframes workers {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 40;
+    }
+  }
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
