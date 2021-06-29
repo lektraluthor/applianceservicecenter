@@ -6,8 +6,10 @@
     <meta name="description" content="Our company provides quality, all-inclusive, professional 24-hour overhaul. Repair of domestic and commercial appliances on the same day near you.">
     <title>Household appliance repair | Appliance repairs at your home | Certified small repair of appliances</title>
     <link rel="stylesheet" media="all" href="assets/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/lightslider.min.css" />        
     <link rel="shortcut icon" href="favicon.jpg"/>
     <link rel="stylesheet" media="all" href="assets/css/main.css">
+    <script defer src="assets/js/lightslider.min.js"></script>
   </head>
   <body>
 
@@ -61,7 +63,7 @@
       </nav>
     </header>
     <main>
-
+      
       <!-- HERO -->
       <section class="hero">
         <div class="container">
@@ -205,23 +207,67 @@
         <div class="container">
           <h2 class="title">Brands We Service</h2>
           <div class="row">
-            <div class="col-6 col-sm-4 col-lg-2 brands-item">
-              <img src="assets/images/brands/Electrolux.png" alt="refrigerator repair service">
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 brands-item">
-              <img src="assets/images/brands/Hotpoint.png" alt="refrigerator repair service">
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 brands-item">
-              <img src="assets/images/brands/Maytag.png" alt="refrigerator repair service">
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 brands-item">
-              <img src="assets/images/brands/Samsung.png" alt="refrigerator repair service">
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 brands-item">
-              <img src="assets/images/brands/Sub-Zero.png" alt="refrigerator repair service">
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 brands-item">
-              <img src="assets/images/brands/Viking.png" alt="refrigerator repair service">
+            <div id="autoplay">
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/Amana.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/Bosch.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/Commercial.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/Dacor.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/DCS.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/Fisher_Paykel.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/Frigidaire.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/GE.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/Hotpoint.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/JennAir.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/Kenmore.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/kitchenaid.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/LG.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/Magic Chef.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/Maytag.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/Sub-Zero.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/Thermador.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/Viking.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/whirlpool.webp" alt="refrigerator repair service">
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2 brands-item">
+                <img src="assets/images/brands/Wolf.webp" alt="refrigerator repair service">
+              </div>
             </div>
           </div>
         </div>
@@ -416,6 +462,47 @@
             suitableAlert = type ? successAlert : dangerAlert;
           $('.flash-message').append(suitableAlert);
         }
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var autoplaySlider = $('#autoplay').lightSlider({
+          item: 6,
+          autoWidth: false,
+          controls: false,
+          pager: false,
+          auto:true,
+          loop:true,
+          pauseOnHover: true,
+          mode: "slide",
+          useCSS: true,
+          cssEasing: 'ease', 
+          easing: 'linear',
+          responsive : [
+          {
+              breakpoint:1200,
+              settings: {
+                item:4
+              }
+            },
+            {
+              breakpoint:800,
+              settings: {
+                item:3
+              }
+            },
+            {
+              breakpoint:480,
+              settings: {
+                item:1
+              }
+            }
+          ],
+          onBeforeSlide: function (el) {
+            $('#current').text(el.getCurrentSlideCount());
+          } 
+        });
+        $('#total').text(autoplaySlider.getTotalSlideCount());
       });
     </script>
   </body>
