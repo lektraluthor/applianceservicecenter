@@ -14,7 +14,6 @@ class HomeController extends BaseController {
     'date',
     'time',
     'description',
-    'agreement',
   ];
 
   public function emailUs() {
@@ -27,7 +26,6 @@ class HomeController extends BaseController {
       'time' => $time,
       'service' => $service,
       'description' => $description,
-      'agreement' => $agreement,
     ) = $_POST;
     foreach (static::REQUIRED_FIELDS as $field) {
       if (!isset($$field) || $$field === NULL) {
@@ -46,7 +44,6 @@ class HomeController extends BaseController {
       'time' => $time,
       'service' => $service,
       'description' => $description,
-      'agreement' => $agreement,
     ];
     $this->view->vars(compact('data'));
     $message = $this->view->renderEmail('email');

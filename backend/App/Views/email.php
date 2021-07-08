@@ -23,6 +23,3 @@
 </div>
 Description:
 <p> <?=$data['description']?></p>
-<?php if ($data['agreement']): ?>
-  $69 service call fee is applied.
-<?php endif; ?>
