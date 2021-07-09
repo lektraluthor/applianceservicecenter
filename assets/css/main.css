@@ -198,7 +198,7 @@ header .navbar-nav .nav-item .nav-link:hover {
 }
 .hero {
   display: flex;
-  padding: 150px 0;
+  padding: 120px 0;
   background: url("/assets/images/hero.webp") center center no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
@@ -228,9 +228,42 @@ header .navbar-nav .nav-item .nav-link:hover {
   align-items: center;
   margin: 36px 0 0 0;
 }
-.hero-bottom img {
-  height: 75px;
-  margin: 20px 40px 0 40px;
+
+.badges img {
+  height: 150px;
+  width: auto;
+  margin: 0 0 0 80px;
+  align-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+}
+.badges .bounce {
+  animation-name: bounce;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.95) translateY(0);
+  }
+  30% {
+    transform: scale(0.95, 1.1) translateY(-70px);
+  }
+  50% {
+    transform: scale(1, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-5px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
 }
 
 @media (max-width: 767px) {
@@ -242,6 +275,14 @@ header .navbar-nav .nav-item .nav-link:hover {
   }
   .hero-bottom {
     flex-direction: column;
+  }
+
+  .badges {
+    margin-top: 20px;
+  }
+  .badges img {
+    height: 100px;
+    margin: 0;
   }
 }
 .offers {
