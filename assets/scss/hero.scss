@@ -1,72 +1,50 @@
 .hero {
   display: flex;
-  padding: 200px 0;
-  align-items: center;
-  background: rgba(54, 54, 54, .8) url("/assets/images/hero.webp") center center no-repeat;
+  padding: 150px 0;
+  background: url("/assets/images/hero.webp") center center no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
-  text-align: center;
 
   h1 {
-    color: #ffffff;
-    font-size: 3rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  h5 {
+    color: $blue;
     font-weight: 600;
+    line-height: 1.5;
   }
-
   p {
-    color: #ffffff;
     max-width: 590px;
-    margin: 24px auto;
+    margin: 24px 0;
   }
-}
-
-.badges {
-  margin-top: 120px;
-
-  img {
-    height: 150px;
-    width: auto;
-    margin: 0 20px;
-    align-self: flex-end;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    transform-origin: bottom;
+  span {
+    color: $green;
   }
-
-  .bounce {
-      animation-name: bounce;
-      animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
-  }
-
-  .delay-1 {
-    animation-delay: .5s;
-  }
-
-  .delay-2 {
-    animation-delay: 1s;
-  }
-
-  @keyframes bounce {
-      0%   { transform: scale(1,1)      translateY(0); }
-      10%  { transform: scale(1.1,.95)   translateY(0); }
-      30%  { transform: scale(.95,1.1)   translateY(-70px); }
-      50%  { transform: scale(1,.95) translateY(0); }
-      57%  { transform: scale(1,1)      translateY(-5px); }
-      64%  { transform: scale(1,1)      translateY(0); }
-      100% { transform: scale(1,1)      translateY(0); }
+  &-bottom {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin: 36px 0 0 0;
+   img {
+     height: 75px;
+     margin: 20px 40px 0 40px;
+   } 
   }
 }
 
 @media (max-width: 767px) {
   .hero {
     padding: 100px 0;
-  }
 
-  .badges {
-    margin-top: 100px;
-    img {
-      height: 100px;
-      margin: 0;
+    h1 {
+      font-size: 2.25rem;
+    }
+    &-bottom {
+      flex-direction: column;
     }
   }
 }
